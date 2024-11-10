@@ -39,6 +39,7 @@ type TAssignmentStore = {
     addAssignment: (assignment: TAssignment) => void;
     removeAssignment: (id: number) => void;
     toggleCompleted: (index: number) => void;
+    clearAllAssignments: () => void;
 };
 
 const countCompletedAssignments = (assignments: TAssignment[]) =>

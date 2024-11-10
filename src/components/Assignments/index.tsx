@@ -8,14 +8,14 @@ export function Assignments() {
   return (
     <section className='px-12 -mt-12' >
       <header className='flex items-center justify-between'>
-        <div className="text-purple-300 flex gap-4">
+        <div className="text-purple-300 flex gap-2">
           <p>Created Assignments</p>
-          <span className="bg-gray-700 px-2 rounded-lg text-gray-100">{assignmentsList.length}</span>
+          <span className="bg-gray-700 px-2 rounded-lg text-gray-100 flex-items-center justify-center">{assignmentsList.length}</span>
         </div>
 
-        <div className="text-purple-400 flex gap-4">
-          <p className={""}>Completed Assignments</p>
-          <span className="bg-gray-700 px-2 rounded-lg text-gray-100">
+        <div className="text-purple-400 flex gap-2">
+          <p className="ml-2">Completed Assignments</p>
+          <span className="bg-gray-700 px-2 rounded-lg text-gray-100 flex-items-center justify-center">
             {completedAssignments} of {assignmentsList.length}
           </span>
         </div>

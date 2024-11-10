@@ -80,13 +80,13 @@ export function Header() {
   }
 
   return (
-    <header className='p-12 py-20'>
+    <header className='p-12'>
       {/* This is simply to show you how to use helper functions */}
-      <h1 className="text-4xl text-white font-bold flex items-center justify-center">
-        <span className="text-purple-500 mx-4">{uppercase("simply")} </span>  Assignment Tracker
+      <h1 className="text-4xl text-white font-bold mt-20 flex-row md:flex items-center justify-center">
+        <span className="text-purple-500 mr-4">{uppercase("simply")}</span> <span>Assignment Tracker</span> 
       </h1>
-      <div className='text-red-600 font-bold text-md ml-12 mt-12 -mb-8'>{error}</div>
-      <form className='text-sm text-white font-bold flex items-center justify-space-between p-12'
+      <div className='text-red-600 font-bold text-md mt-12'>{error}</div>
+      <form className='text-sm text-white font-bold flex-row md:flex items-center justify-space-between mt-2 mb-8'
         onSubmit={handleFormSubmit}>
         <input
           className="p-4 rounded-md min-w-48 w-full bg-gray-600 text-gray-100"

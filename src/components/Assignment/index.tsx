@@ -73,11 +73,11 @@ export function Assignment({ assignment, index }: AssignmentProps) {
                     {assignment.assignment}
                 </p>
             </div>
-            <div className="flex gap-4">
-                <p className={checkDueDate(assignment.dueDate) === "dueNow" ? "bg-red-600 px-4 p-1 rounded-full" :
+            <div className="flex gap-4 ml-2">
+                <p className={checkDueDate(assignment.dueDate) === "dueNow" ? "bg-red-600 px-4 p-1 rounded-full flex-items-center justify-center" :
                     (checkDueDate(assignment.dueDate) === "duePast"
-                        ? "bg-green-600 px-4 p-1 rounded-full"
-                        : "bg-gray-700 px-4 p-1 rounded-full")}>
+                        ? "bg-green-600 px-4 p-1 rounded-full flex-items-center justify-center"
+                        : "bg-gray-700 px-4 p-1 rounded-full flex-items-center justify-center")}>
                     {formatDate(assignment.dueDate)}
                 </p>
 
