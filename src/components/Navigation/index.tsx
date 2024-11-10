@@ -8,7 +8,6 @@ export default function Navigation() {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
-        console.log(menuOpen)
     }
     const deleteAllAssignments = assignmentUseStore((state) => state.clearAllAssignments)
 
@@ -42,7 +41,7 @@ export default function Navigation() {
                             </ul>
                         </div>
                     </div>
-                    |<div className='text-red-600 flex justify-end mr-8' onClick={deleteAllAssignments}>
+                    |<div className='text-red-600 flex justify-end mr-8 cursor-pointer' onClick={deleteAllAssignments}>
                         <AiOutlineDelete size={20} />
                     </div>
                     {
