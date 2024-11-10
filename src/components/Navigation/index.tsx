@@ -17,7 +17,7 @@ export default function Navigation() {
                 <div className="flex p-2 items-center justify-between gap-12 transform ease-in-out transition-all duration-500">
                     <div>
                         <Link to="/">
-                            <img src="src/assets/SAT logo.png" className='w-48' />
+                            <img src="src/assets/SAT-logo.png" className='w-48' />
                         </Link>
                     </div>
                     <div className="flex gap-24">
