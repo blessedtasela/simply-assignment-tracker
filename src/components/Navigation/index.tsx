@@ -88,9 +88,6 @@ export default function Navigation() {
                             </li>
                         </ul >
                     </div >
-                    |<div className='text-red-600 flex justify-end mr-8' onClick={deleteAllAssignments}>
-                        <AiOutlineDelete size={20} />
-                    </div>
                 </div >
 
             </nav >
