@@ -9,6 +9,10 @@ export default function Navigation() {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
     }
+
+    const closeMenu = ()=>{
+        setMenuOpen(false)
+    }
     const deleteAllAssignments = assignmentUseStore((state) => state.clearAllAssignments)
 
     return (
@@ -17,7 +21,7 @@ export default function Navigation() {
                 <div className="flex p-2 items-center justify-between gap-12 transform ease-in-out transition-all duration-500">
                     <div>
                         <Link to="/">
-                            <img src="src/assets/SAT-logo.png" className='w-48' />
+                            <img src="/SAT-logo.png" className='w-48' />
                         </Link>
                     </div>
                     <div className="flex gap-24">
@@ -70,17 +74,17 @@ export default function Navigation() {
                          ${!menuOpen ? 'opacity-0 max-h-0' : 'opacity-100 max-h-96'}`}>
                     <div className="flex-col items-center justify-center gap-8 text-xl mt-4 ml-8">
                         <ul className="p-4 flex-cols items-center justify-center gap-4 space-y-8 font-mono gap-8">
-                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500">
+                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
                                 <Link to="/">
                                     Home
                                 </Link>
                             </li>
-                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500">
+                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
                                 <Link to="/about">
                                     About
                                 </Link>
                             </li>
-                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500">
+                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
                                 <Link to='/contact'>
                                     Contact
                                 </Link>
