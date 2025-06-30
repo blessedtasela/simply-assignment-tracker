@@ -42,6 +42,11 @@ export default function Navigation() {
                                         Contact
                                     </Link>
                                 </li>
+                                <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
+                                <Link to='/foods'>
+                                    Foods
+                                </Link>
+                            </li>
                             </ul>
                         </div>
                     </div>
@@ -73,7 +78,7 @@ export default function Navigation() {
                     className={`md:hidden block w-full bg-white rounded-b-lg transform ease-in-out transition-all duration-500
                          ${!menuOpen ? 'opacity-0 max-h-0' : 'opacity-100 max-h-96'}`}>
                     <div className="flex-col items-center justify-center gap-8 text-xl mt-4 ml-8">
-                        <ul className="p-4 flex-cols items-center justify-center gap-4 space-y-8 font-mono gap-8">
+                        <ul className="p-4 flex-cols items-center justify-center gap-4 space-y-8 font-sans gap-8">
                             <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
                                 <Link to="/">
                                     Home
@@ -87,6 +92,11 @@ export default function Navigation() {
                             <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
                                 <Link to='/contact'>
                                     Contact
+                                </Link>
+                            </li>
+                            <li className="cursor-pointer hover:scale-105 hover:text-purple-500" onClick={closeMenu}>
+                                <Link to='/foods'>
+                                    Foods
                                 </Link>
                             </li>
                         </ul >

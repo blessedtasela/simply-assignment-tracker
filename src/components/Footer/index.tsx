@@ -6,7 +6,7 @@ export default function Footer() {
     }
 
     return (
-        <section className="w-full bottom-0 rounded-t-lg text-md md:text:md font-mono text-white">
+        <section className="w-full bottom-0 rounded-t-lg text-md md:text:md font-sans text-white">
             <div className="bg-gray-950 flex items-center justify-center h-48 md:h-24 lg:h-16">
                 <div className="grid grid-cols md:grid-cols-2 mx-auto gap-2 lg:gap-0">
                     <div className="flex justify-center items-center">

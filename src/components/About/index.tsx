@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div className="shadow-lg text-xl font-sans text-white bg-gray-950 h-screen h-full w-full">
             <div className="p-8 py-48">
-                <p className="text-2xl md:text-4xl font-mono text-center mb-4 font-bold">
+                <p className="text-2xl md:text-4xl font-sans text-center mb-4 font-bold">
                     About the App
                 </p>
                 <div className="mt-4 w-12 mx-auto border-2 p-1 bg-purple-500 rounded-lg border-purple-500"></div>

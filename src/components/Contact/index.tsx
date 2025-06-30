@@ -13,11 +13,11 @@ export default function Contact() {
     return (
         <div className="shadow-lg text-xl font-sans text-white bg-gray-950 h-screen w-full">
             <div className="p-8 py-48">
-                <p className="text-2xl md:text-4xl font-mono text-center mb-4 font-bold">
+                <p className="text-2xl md:text-4xl font-sans text-center mb-4 font-bold">
                     Reach out to me
                 </p>
                 <div className="mt-4 w-12 mx-auto border-2 p-1 bg-purple-500 rounded-lg border-purple-500"></div>
-                <div className="gap-2 p-4 grid grid-cols-2 md:grid-cols-3 mt-20 font-mono">
+                <div className="gap-2 p-4 grid grid-cols-2 md:grid-cols-3 mt-20 font-sans">
                     {contacts.map((contact) => (
                         <div key={contact.id} className="w-auto flex flex-col items-center justify-center rounded-md hover:scale-105">
                             <div className="text-center p-2 text-sm md:text-xl">

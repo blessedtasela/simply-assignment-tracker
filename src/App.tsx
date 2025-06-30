@@ -6,7 +6,7 @@ import { Assignments } from './components/Assignments';
 function App() {
 
   return (
-    <div className='bg-gray-950 min-h-screen font-mono'>
+    <div className='bg-gray-950 min-h-screen font-sans'>
       <Header />
       <Assignments />
     </div>
